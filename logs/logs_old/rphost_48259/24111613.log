@@ -1,0 +1,125 @@
+﻿04:44.101000-0,EXCP,1,process=1cv8,OSThread=1168,Exception=d294e384-7ea6-49c6-be96-f3a6e3de1242,Descr='LoadComponent(liccspr):
+d294e384-7ea6-49c6-be96-f3a6e3de1242: Ошибка загрузки компоненты liccspr: 126(0x0000007E): Не найден указанный модуль. '
+04:44.179001-1,LIC,1,process=1cv8,OSThread=1168,Func=initialize,txt='local Application, hasp HL soft local, ORGL8 local net, ORG8A local net, ORG8B local net, Base local net'
+04:44.195001-1,HASP,2,process=1cv8,OSThread=1168,Txt='
+LOCALHASP_ISHASP(,,ser=ORGL8,,,,)->found=0,port=0,stat=0,'
+04:44.195002-0,HASP,2,process=1cv8,OSThread=1168,Txt='Computer parameters from cache:
+OS_0: Майкрософт Windows 11 Pro
+OS Ver_0: 10.0.22621, 22621
+OS Ser_0: 00330-50000-00000-AAOEM
+OS Inst Date_0: 20230311000249.000000+180
+Sys Name_0: LENOVO_LEGION
+Sys Type_0: 82JQ, x64-based PC
+Phis Mem_0: 68564348928
+BIOS_0: LENOVO, 20220616000000.000000+000, GKCN57WW, 3, 3
+CPU_0: CPU0, AMD64 Family 25 Model 80 Stepping 0, 64, 64, 4096, 3201, 178BFBFF00A50F00, 20480, FP6
+NET_0: [00000000] Microsoft Kernel Debug Network Adapter, ROOT\KDNIC\0000
+NET_1: [00000001] ASIX AX88179A USB 3.2 Gen1 to Gigabit Ethernet Adapter
+NET_2: [00000002] TAP-Windows Adapter V9, 00:FF:4A:39:1B:98, ROOT\NET\0001
+NET_3: [00000003] VPN Client Adapter - VPN, 5E:20:19:E9:AF:AA, ROOT\NET\0002
+NET_4: [00000004] Wintun Userspace Tunnel, ROOT\NET\0000
+NET_5: [00000005] Realtek PCIe GbE Family Controller, 6C:24:08:23:39:88, PCI\VEN_10EC&DEV_8168&SUBSYS_390B17AA&REV_15\01000000684CE00000
+NET_6: [00000006] Intel(R) Wi-Fi 6 AX200 160MHz, C8:CB:9E:64:12:02, PCI\VEN_8086&DEV_2723&SUBSYS_00808086&REV_1A\4&270B8A2C&0&0012
+NET_7: [00000007] Bluetooth Device (Personal Area Network), C8:CB:9E:64:12:06, BTH\MS_BTHPAN\7&8500D0F&0&2
+NET_8: [00000008] Microsoft Wi-Fi Direct Virtual Adapter, C8:CB:9E:64:12:03, {5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\VWIFIMP_WFD\5&138632DB&0&11
+NET_9: [00000009] Microsoft Wi-Fi Direct Virtual Adapter
+NET_10: [00000010] WAN Miniport (SSTP), SWD\MSRRAS\MS_SSTPMINIPORT
+NET_11: [00000011] WAN Miniport (IKEv2), SWD\MSRRAS\MS_AGILEVPNMINIPORT
+NET_12: [00000012] WAN Miniport (L2TP), SWD\MSRRAS\MS_L2TPMINIPORT
+NET_13: [00000013] WAN Miniport (PPTP), SWD\MSRRAS\MS_PPTPMINIPORT
+NET_14: [00000014] WAN Miniport (PPPOE), SWD\MSRRAS\MS_PPPOEMINIPORT
+NET_15: [00000015] WAN Miniport (IP), C0:0F:20:52:41:53, SWD\MSRRAS\MS_NDISWANIP
+NET_16: [00000016] WAN Miniport (IPv6), C2:69:20:52:41:53, SWD\MSRRAS\MS_NDISWANIPV6
+NET_17: [00000017] WAN Miniport (Network Monitor), C2:69:20:52:41:53, SWD\MSRRAS\MS_NDISWANBH
+NET_18: [00000018] Realtek USB GbE Family Controller
+NET_19: [00000019] Hyper-V Virtual Switch Extension Adapter, ROOT\VMS_VSMP\0000
+DISK_0: SKHynix_HFS512GDE9X084N, SCSI\DISK&VEN_NVME&PROD_SKHYNIX_HFS512GD\5&C5C04FE&0&000000, 512, 63, 62260, 255, 15876300, 1000206900, 512105932800
+DISK_1: Netac NVMe SSD 1TB, SCSI\DISK&VEN_NVME&PROD_NETAC_NVME_SSD_1\5&185218B5&0&000000, 512, 63, 121601, 255, 31008255, 1953520065, 1000202273280
+PART_0: Диск #0, раздел #0, 1048576, 532480, 272629760
+PART_1: Диск #0, раздел #1, 290455552, 418009088, 214020653056
+PART_2: Диск #0, раздел #2, 214311108608, 1419264, 726663168
+PART_3: Диск #0, раздел #3, 215038820352, 576120832, 294973865984
+PART_4: Диск #0, раздел #4, 510012686336, 4096000, 2097152000
+PART_5: Диск #1, раздел #0, 16777216, 1953488896, 1000186314752
+VIDEO_0: NVIDIA GeForce RTX 3060 Laptop GPU, -1048576, PCI\VEN_10DE&DEV_2560&SUBSYS_3A8017AA&REV_A1\4&1D71CFEE&0&0009'
+04:44.195003-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195004-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195005-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195006-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195007-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195008-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195009-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195010-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195011-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195012-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195013-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195014-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195015-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195016-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195017-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195018-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195019-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195020-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.195021-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211000-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211001-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211002-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211003-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211004-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211005-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211006-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211007-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+04:44.211008-0,EXCP,2,process=1cv8,OSThread=1168,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\backbas\src\ClientStorageImpl.cpp(555):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Ошибка перемещения файлов из 'C:\ProgramData\1C\1cv8\1cv8conn.pfl' в 'C:\ProgramData\1C\1cv8\1cv8connO.pfl' : Ошибка доступа к файлу: src\core\src\files.cpp(3049): Ошибка доступа к файлу. 5(0x00000005): Отказано в доступе. "
+﻿04:02.177003-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=3,CallID=21989,MName=getToDelete,DstClientID=108
+04:02.177005-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=30,CallID=21990,MName=getClusterManagerList,DstClientID=108
+04:02.177007-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=52,CallID=21991,MName=refreshProcesses,DstClientID=108
+04:02.177009-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=9,CallID=21992,MName=getSrvrProcessParamsList,DstClientID=108
+04:02.177011-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=0,CallID=21993,MName=getRegistryParams,DstClientID=105
+04:02.177013-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=10,CallID=21994,MName=getAllManagers,DstClientID=105
+04:02.177015-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=18,CallID=21995,MName=getAllWorkProcesses,DstClientID=105
+04:02.177017-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=18,CallID=21996,MName=getServersList,DstClientID=108
+04:02.177019-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=0,CallID=21997,MName=getRegistryParams,DstClientID=105
+04:02.177021-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=18,CallID=21998,MName=getServersList,DstClientID=108
+04:02.193001-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=4,CallID=21999,MName=getIBParamsList,DstClientID=108
+04:02.193003-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=30,CallID=22000,MName=getClusterManagerList,DstClientID=108
+04:02.193005-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=18,CallID=22001,MName=getServersList,DstClientID=108
+04:02.193007-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=0,CallID=22002,MName=getRegistryParams,DstClientID=105
+04:02.193009-1,SCALL,0,process=ragent,OSThread=17552,ClientID=54,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=10,CallID=22003,MName=getAllManagers,DstClientID=105
+04:02.193011-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=38,CallID=22004,MName=getServiceAssociationRules,DstClientID=108
+04:02.193013-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=18,CallID=22005,MName=getServersList,DstClientID=108
+04:02.193015-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=31,CallID=22006,MName=syncLaunchedProcesses,DstClientID=108
+04:02.459001-1,SCALL,0,process=ragent,OSThread=8996,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=29,CallID=22007,MName=getRegistryVersion,DstClientID=108
+04:02.630001-1,SCALL,0,process=ragent,OSThread=9108,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=29,CallID=22008,MName=getRegistryVersion,DstClientID=108
+04:02.630003-1,SCALL,0,process=ragent,OSThread=9108,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=82,CallID=22009,MName=getServiceDistribVersion,DstClientID=108
+04:02.630005-1,SCALL,0,process=ragent,OSThread=9108,ClientID=54,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=37,CallID=22010,MName=getProcessesSetVersion,DstClientID=105
+04:02.630007-1,SCALL,0,process=ragent,OSThread=9108,ClientID=57,Interface=64016dc5-c439-49fa-8a71-c3cb708e243b,IName=IClusterState,Method=5,CallID=22011,MName=getAllServers,DstClientID=108
+04:03.193002-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=3,CallID=22012,MName=getToDelete,DstClientID=108
+04:03.193004-1,SCALL,0,process=ragent,OSThread=17552,ClientID=57,Interface=0459eaa0-589f-4a6d-9eed-c1a7461c8e3f,IName=IClusterRegistry,Method=30,CallID=22013,MName=getClusterManagerList,DstClientID=108

@@ -1,0 +1,79 @@
+timezone: Europe/Moscow
+api:
+  enabled: true
+
+sources:
+  input_logs_old:
+    type: file
+    include:
+      - /logs/**/logs_old/**/*.log
+    fingerprint:
+      strategy: device_and_inode
+    multiline:
+      timeout_ms: 400
+      mode: halt_before
+      start_pattern: ""
+      condition_pattern: "^[0-5]{1}\\d:[0-5]{1}\\d\\.\\d{6}\\-"
+
+  input_logs_json:
+    type: file
+    include:
+      - /logs/**/logs_json/**/*.log
+
+
+transforms:
+  logs_to_json:
+    inputs:
+      - input_logs_json
+    type: remap
+    source: |-
+      .log = parse_json!(replace!(.message, r'^[^{]{0,4}', ""))
+      .ts = del(.log.ts)
+
+      # convert .ts from local to Moscow tz
+      ts_format = "%Y-%m-%dT%H:%M:%S.%6f"
+      .ts = format_timestamp!(parse_timestamp!(.ts,  format: ts_format), ts_format, timezone:"Europe/Moscow")
+      
+      .name = del(.log.name)
+      .duration = del(.log.duration)
+      del(.message)
+
+  logs_to_json_from_old:
+    inputs:
+      - input_logs_old
+    type: remap
+    source: |-    
+        .message=strip_whitespace!(.message)     
+        . |= parse_regex!(.message, r'(?P<ts>\d{2}:\d{2}\.\d{6})-(?P<duration>\d+),(?P<name>[a-zA-Z]+),\d+,(?P<params>[\s\S]*)') 
+        
+        date_from_file = to_string(split!(split!(.file, "/")[-1], ".")[0])
+        .ts = format_timestamp!(parse_timestamp!((date_from_file + to_string(.ts)), "%y%m%d%H%M:%S.%6f"), "%Y-%m-%dT%H:%M:%S.%6f", timezone:"Europe/Moscow")
+        
+        .params = replace(.params, "''", "")
+        .params = replace(.params, "\"\"", "")
+        .log = parse_key_value!(.params, field_delimiter: ",", key_value_delimiter: "=", accept_standalone_key: false) 
+
+        .log |= parse_regex!(.file, r'(?P<ProcessID>\d+)/\d+\.log\z', numeric_groups: false) 
+        del(.message); del(.params)
+
+  add_context_event:
+    inputs:
+      - logs_to_json*
+    type: reduce
+    starts_when:
+      type: vrl
+      source: .name != "Context"
+
+sinks:
+  clickhouse:
+    type: clickhouse
+    inputs: 
+         - add_context_event
+    endpoint: ${CLICKHOUSE_SERVER}
+    auth:
+      strategy: basic
+      user: ${CLICKHOUSE_USER}
+      password: ${CLICKHOUSE_PASSWORD}
+    database: ${CLICKHOUSE_DATABASE}
+    skip_unknown_fields: true
+    table: "tech_journal"
